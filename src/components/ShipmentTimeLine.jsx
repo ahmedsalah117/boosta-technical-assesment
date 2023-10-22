@@ -113,7 +113,8 @@ const ShipmentTimeLine = ({
         <div className="flex-col">
           <p className="mb-3">أخر تحديث</p>
           <p className="font-bold">
-            الإثنين {lastUpdate.date} الساعة {lastUpdate.time}{" "}
+            {generateDayMonthYear(new Date(lastUpdate.date), "ar").day}{" "}
+            {lastUpdate.date} الساعة {lastUpdate.time}{" "}
           </p>
         </div>
         <div className="flex-col">
